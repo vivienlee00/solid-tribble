@@ -1,0 +1,13 @@
+var fibonacci = function(n){   
+    
+    var helper = function(1st, 2nd){
+    }
+
+    helper(1,2);
+}
+
+var gcd = function(a,b){
+}
+
+var randomStudent = function(){
+}
