@@ -5,7 +5,7 @@ var fibonacci = function(n){
     }
 
     var counter = 0;
-    
+
     var helper = function(first, second){
 	if(counter == n-1){
 	    return first;
@@ -24,20 +24,14 @@ var gcd = function(a,b){
     }
 
     return gcd(b, a % b);
-    
+
     //stolen from StackOverflow
 }
 
 var randomStudent = function(){
 
-    var list = [];
+    var list = [0,1,2];
+    var randomnumber = Math.floor(Math.random() * list.length);
 
-    var loadList = function(n){
-    }
-
-    var getFromList = function(){
-	return 
-    }
-
-    list=loadList(n);
+    return list[randomnumber];
 }
