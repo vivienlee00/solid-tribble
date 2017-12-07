@@ -35,3 +35,14 @@ var randomStudent = function(){
 
     return list[randomnumber];
 }
+
+var buttonCallback = function(e){
+
+    console.log(e);
+    console.log(this);
+    return null;
+    
+}
+
+var el = document.getElementById('b');
+el.addEventListener("click", buttonCallback);
