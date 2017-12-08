@@ -20,20 +20,20 @@ var fibonacci = function(n){
 
 var gcd = function(a,b){
     if (!b){
-	return a;
+	     return a;
     }
 
-    return gcd(b, a % b);
+    console.log(gcd(b, a % b));
 
     //stolen from StackOverflow
 }
 
 var randomStudent = function(){
 
-    var list = [0,1,2];
+    var list = ["Vivien","James","Chloe"];
     var randomnumber = Math.floor(Math.random() * list.length);
 
-    return list[randomnumber];
+    console.log(list[randomnumber]);
 }
 
 var buttonCallback = function(e){
@@ -41,8 +41,17 @@ var buttonCallback = function(e){
     console.log(e);
     console.log(this);
     return null;
-    
+
 }
 
-var el = document.getElementById('b');
-el.addEventListener("click", buttonCallback);
+var fibb = document.getElementById('fib');
+fibb.addEventListener("click", function() { fibonacci(12) });
+
+var denomm = document.getElementById('denom');
+denomm.addEventListener("click", function() { gcd(36,72) });
+
+var randoo = document.getElementById('rando');
+randoo.addEventListener("click", randomStudent);
+
+var b = document.getElementById('b');
+b.addEventListener("click", buttonCallback);
