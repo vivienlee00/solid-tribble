@@ -23,7 +23,7 @@ var gcd = function(a,b){
 	     return a;
     }
 
-    console.log(gcd(b, a % b));
+    return(gcd(b, a % b));
 
     //stolen from StackOverflow
 }
@@ -48,10 +48,10 @@ var fibb = document.getElementById('fib');
 fibb.addEventListener("click", function() { fibonacci(12) });
 
 var denomm = document.getElementById('denom');
-denomm.addEventListener("click", function() { gcd(36,72) });
+denomm.addEventListener("click", function() {console.log(gcd(36,72)) });
 
 var randoo = document.getElementById('rando');
 randoo.addEventListener("click", randomStudent);
 
-var b = document.getElementById('b');
-b.addEventListener("click", buttonCallback);
+//var b = document.getElementById('b');
+//b.addEventListener("click", buttonCallback);
